@@ -1,4 +1,5 @@
 ! Facebook Marketplace - Hide seller profile pictures
-! Created by [your name] - Feb 18, 2026
+! Created by robiiirob3 - Feb 18, 2026
 ||fbcdn.net^*s100x100*
 ||fbcdn.net^*p100x100*
+www.facebook.com##a[href*="/marketplace/"] svg image
