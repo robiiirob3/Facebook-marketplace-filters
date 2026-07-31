@@ -1,0 +1,26 @@
+# Facebook Marketplace – block images/thumbnails (Marketplace only)
+
+# Marketplace listing pages
+facebook.com^$subdocument
+||facebook.com/marketplace^$document
+||m.facebook.com/marketplace^$document
+
+# Marketplace image / media routes (best-effort)
+facebook.com/marketplace^$document
+facebook.com/marketplace/*/photos*$block
+facebook.com/marketplace/*/photos/*$block
+facebook.com/marketplace/*/images*$block
+facebook.com/marketplace/*/images/*$block
+facebook.com/marketplace/*/media*$block
+facebook.com/marketplace/*/media/*$block
+
+# Common thumbnail/ad media paths on Facebook
+*.fbcdn.net/*$block
+*.fbsbx.com/*$block
+
+# Generic Marketplace thumb/image endpoints
+*.facebook.com/marketplace*photo*$block
+*.facebook.com/marketplace*image*$block
+*.facebook.com/marketplace*images*$block
+*.facebook.com/marketplace*thumb*$block
+*.facebook.com/marketplace*media*$block

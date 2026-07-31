@@ -1,0 +1,19 @@
+# Global: block common image/media file types (reduces “peek/blur” content)
+*.jpg$document
+*.jpeg$document
+*.png$document
+*.gif$document
+*.webp$document
+*.bmp$document
+*.svg$document
+
+*.mp4$document
+*.webm$document
+*.mov$document
+
+# Some sites serve thumbnails as "thumb", "image", "media" paths
+*thumb*/*$block
+*thumbnail*/*$block
+*images*/*$block
+*image*/*$block
+*media*/*$block
